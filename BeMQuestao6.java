@@ -1,12 +1,17 @@
-class BeMQuestao3Conta{
+class BeMQuestao6{
     private String nomeDoCorrentista;
     private float saldo;
     private boolean contaÉEspecial;
 
-void abreContaSimples(String nome){
+void abreContaSimples(String nome, float valor){
     nomeDoCorrentista = nome;
-    saldo = (float) 0.00;
     contaÉEspecial = false;
+    if (valor >= 100.00){
+        saldo = valor;
+    }
+    else{
+        System.out.println("O valor minimo para abrir uma conta simples e de 100 reais");
+    }
 }
 
 void abreContaEspecial(String nome){
@@ -52,14 +57,15 @@ void mostraDados(){
 
 
 
-class TestaContaBancariaSimplificada{
+class TestaContaBancariaSimplificada2{
     public static void main (String[] args){
-        BeMQuestao3Conta c1;
-        c1 = new BeMQuestao3Conta();
+        BeMQuestao6 c1;
+        c1 = new BeMQuestao6();
         c1.abreContaEspecial("Maria");
-        BeMQuestao3Conta c2 = new BeMQuestao3Conta();
-        c2.abreContaSimples("Joao");
+        BeMQuestao6 c2 = new BeMQuestao6();
+        c2.abreContaSimples("Joao", 150);
         c1.deposita(200);
+        c2.retira(50);
         if (c1.retira (300)){
             System.out.println("Saque realizado com sucesso!");
         }
