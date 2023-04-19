@@ -70,3 +70,30 @@ O método int maior não deve retornar valor booleano, apenas do tipo int. No m�
 
 
 Falta o modificador de acesso "public" e declarar a classe como estática. Não deve ser possível retornar valor.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Baruque e Baruque
+
+1- O exemplo deixou mais claro a questão de referencias e espaços alocados em memória e do porquê frase1 e frase2 nao serem iguais.
+
+
+
+2-A questao 2 e o oposto da primeira, deixa mais claro o porquê frase3 e frase4 serem iguais.
+
+
+3-A questao explica bem o metodo equals.
+
+
+4-A questao ajuda a compreender melhor os metodos e modificadores.
